@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Explore Heychat features including private messaging, voice and video calls, status updates, media sharing, and secure communication tools." />
-    <title>Features | Heychat</title>
+    <meta name="description" content="Heychat is a modern communication platform for private messaging, voice calls, community engagement, and secure digital connection." />
+    <meta name="theme-color" content="#4f6bff" />
+    <meta property="og:title" content="Heychat | Modern Communication for Everyday Connections" />
+    <meta property="og:description" content="Private messaging, status updates, voice calls, media sharing, and secure communication in one modern app." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/hero-illustration.svg" />
+    <title>Heychat | Modern Communication for Everyday Connections</title>
     <link rel="icon" type="image/svg+xml" href="assets/heychat-logo.svg" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -17,8 +22,9 @@
         </a>
 
         <nav class="main-nav" aria-label="Main navigation">
-          <a href="index.html">Home</a>
-          <a href="features.html" class="active">Features</a>
+          <a href="index.html" class="active">Home</a>
+          <a href="play.html">Play</a>
+          <a href="features.html">Features</a>
           <a href="about.html">About</a>
           <a href="download.html">Download</a>
           <a href="blog.html">Blog</a>
@@ -38,6 +44,7 @@
 
       <div class="mobile-menu">
         <a href="index.html">Home</a>
+        <a href="play.html">Play</a>
         <a href="features.html">Features</a>
         <a href="about.html">About</a>
         <a href="download.html">Download</a>
@@ -48,63 +55,102 @@
     </header>
 
     <main>
-      <section class="page-header">
-        <div class="container narrow">
-          <span class="eyebrow">Features</span>
-          <h1>Communication tools designed to feel effortless.</h1>
-          <p>Everything you need to connect, share, and collaborate in one streamlined messaging experience.</p>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">A better way to connect</span>
+            <h1>Modern messaging for people who value real connection.</h1>
+            <p>
+              Heychat helps people stay close through private messaging, voice calls,
+              updates, and seamless communication for work, family, and community.
+            </p>
+
+            <div class="hero-actions">
+              <a href="download.html" class="button button-primary">Download app</a>
+              <a href="play.html" class="button button-secondary">Explore Play</a>
+            </div>
+
+            <div class="hero-meta">
+              <div>
+                <strong>10k+</strong>
+                <span>Active communities</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>User rating</span>
+              </div>
+              <div>
+                <strong>99.9%</strong>
+                <span>Reliable uptime</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="phone-mockup">
+              <div class="phone-header">
+                <span class="status-dot red"></span>
+                <span class="status-dot yellow"></span>
+                <span class="status-dot green"></span>
+              </div>
+
+              <div class="chat-preview">
+                <div class="chat-bubble incoming">
+                  <strong>Sam</strong>
+                  <p>Hey! Are we still on for tonight?</p>
+                </div>
+                <div class="chat-bubble outgoing">
+                  <strong>You</strong>
+                  <p>Yes — sending the details now.</p>
+                </div>
+                <div class="chat-bubble incoming">
+                  <strong>Priya</strong>
+                  <p>Shared the files. Looking good.</p>
+                </div>
+                <div class="message-bar">
+                  <span>Type a message</span>
+                  <button>Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="logo-section">
+        <div class="container logo-row" aria-label="Trusted by teams and communities">
+          <span>Northstar</span>
+          <span>Signal</span>
+          <span>Nova Labs</span>
+          <span>Bluebird</span>
+          <span>Canvas</span>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
-          <div class="feature-grid feature-grid-large">
-            <article class="feature-card feature-detail">
-              <div class="icon-wrap">🔒</div>
+          <div class="section-heading">
+            <span class="eyebrow eyebrow-soft">Why Heychat</span>
+            <h2>Clear communication for the people who matter most.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon-wrap">💬</div>
               <h3>Private messaging</h3>
-              <p>Keep conversations personal, direct, and protected with a messaging flow built for trust and clarity.</p>
+              <p>Keep your conversations personal, organized, and easy to follow.</p>
             </article>
 
-            <article class="feature-card feature-detail">
-              <div class="icon-wrap">📞</div>
-              <h3>Voice and video calls</h3>
-              <p>Start a quick call or video chat with a single tap when a message is not enough.</p>
+            <article class="feature-card">
+              <div class="icon-wrap">🎧</div>
+              <h3>Voice & video calls</h3>
+              <p>Speak face-to-face with friends, family, or teammates in real time.</p>
             </article>
 
-            <article class="feature-card feature-detail">
-              <div class="icon-wrap">✨</div>
-              <h3>Status updates</h3>
-              <p>Share short updates with your circle so people can stay informed without constant messages.</p>
-            </article>
-
-            <article class="feature-card feature-detail">
-              <div class="icon-wrap">👥</div>
-              <h3>Contact management</h3>
-              <p>Organize your conversations, keep important contacts visible, and maintain cleaner communication.</p>
-            </article>
-
-            <article class="feature-card feature-detail">
-              <div class="icon-wrap">🌍</div>
-              <h3>Language translation</h3>
-              <p>Break down communication barriers with simple translation tools that improve everyday understanding.</p>
-            </article>
-
-            <article class="feature-card feature-detail">
-              <div class="icon-wrap">📷</div>
-              <h3>Media sharing</h3>
-              <p>Send photos, videos, files, and voice notes in a simple, accessible format.</p>
-            </article>
-
-            <article class="feature-card feature-detail">
-              <div class="icon-wrap">🧩</div>
-              <h3>User-friendly interface</h3>
-              <p>Enjoy a clean, modern, and easy-to-navigate interface designed for quick adoption.</p>
-            </article>
-
-            <article class="feature-card feature-detail">
-              <div class="icon-wrap">🛡️</div>
-              <h3>Privacy and security</h3>
-              <p>Give users a safer communication experience with thoughtful protection features and transparency.</p>
+            <article class="feature-card">
+              <div class="icon-wrap">⚡</div>
+              <h3>Instant updates</h3>
+              <p>Share quick moments, status changes, and important updates in seconds.</p>
             </article>
           </div>
         </div>
@@ -113,12 +159,55 @@
       <section class="section section-alt">
         <div class="container split-layout">
           <div>
-            <span class="eyebrow">Designed for everyday use</span>
-            <h2>Simple enough for daily life, powerful enough for growing communities.</h2>
+            <span class="eyebrow">Built around everyday conversations</span>
+            <h2>Everything you need to communicate with clarity.</h2>
+            <p>
+              Heychat is designed to make communication simple, human, and secure.
+              Whether you're messaging a friend, coordinating with a team, or building a community,
+              the experience stays fast, clear, and intuitive.
+            </p>
           </div>
-          <div class="stacked-copy">
-            <p>Heychat is built to serve both personal and professional communication — from quick check-ins to community-wide updates.</p>
-            <p>Its modular, lightweight structure makes it easy for users to understand, update, and depend on over time.</p>
+
+          <div class="benefit-list">
+            <div class="benefit-item">
+              <strong>01</strong>
+              <div>
+                <h3>Organized chats</h3>
+                <p>Keep conversations grouped by purpose and context.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <strong>02</strong>
+              <div>
+                <h3>Secure by default</h3>
+                <p>Built with privacy and safety in mind for daily communication.</p>
+              </div>
+            </div>
+            <div class="benefit-item">
+              <strong>03</strong>
+              <div>
+                <h3>Simple user experience</h3>
+                <p>Designed to feel natural from the very first message.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading centered">
+            <span class="eyebrow eyebrow-soft">Download Heychat</span>
+            <h2>Stay connected wherever you are.</h2>
+          </div>
+
+          <div class="download-callout">
+            <p>Meet friends, communities, and work teams using a modern app experience designed for everyday use.</p>
+            <div class="store-buttons">
+              <a href="#" class="store-button" aria-label="Download on Google Play placeholder">Google Play</a>
+              <a href="#" class="store-button" aria-label="Download on Apple App Store placeholder">App Store</a>
+              <a href="#" class="store-button" aria-label="Download desktop version placeholder">Desktop</a>
+            </div>
           </div>
         </div>
       </section>
