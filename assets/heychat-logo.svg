@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Heychat logo">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4f6bff" />
+      <stop offset="100%" stop-color="#2ad3b0" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#0f172a"/>
+  <path d="M34 82V40h18.5c15 0 23.8 7.5 23.8 20.5S67.5 82 52.5 82H34Zm16.8-14h2.5c6.5 0 10.7-2.9 10.7-9.5s-4.2-9.7-10.7-9.7h-2.5v19.2Z" fill="url(#g1)"/>
+  <circle cx="88" cy="52" r="10" fill="#ffffff" opacity="0.9"/>
+</svg>

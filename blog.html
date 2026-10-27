@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Read the Heychat blog for product updates, communication tips, digital privacy advice, and app feature highlights." />
+    <title>Blog | Heychat</title>
+    <link rel="icon" type="image/svg+xml" href="assets/heychat-logo.svg" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Heychat home">
+          <img src="assets/heychat-logo.svg" alt="Heychat logo" class="brand-logo" />
+          <span>Heychat</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="features.html">Features</a>
+          <a href="about.html">About</a>
+          <a href="download.html">Download</a>
+          <a href="blog.html" class="active">Blog</a>
+          <a href="help.html">Help</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="download.html" class="button button-secondary">Download</a>
+          <a href="contact.html" class="button button-primary">Get Started</a>
+        </div>
+
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="about.html">About</a>
+        <a href="download.html">Download</a>
+        <a href="blog.html">Blog</a>
+        <a href="help.html">Help</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header blog-header">
+        <div class="container narrow">
+          <span class="eyebrow">Blog</span>
+          <h1>Insights, updates, and ideas for a connected digital life.</h1>
+          <p>Demo content for Heychat blog posts and editorial updates.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="blog-toolbar">
+            <div class="search-box">
+              <input id="blog-search" type="search" placeholder="Search articles..." aria-label="Search blog articles" />
+            </div>
+            <div class="blog-categories" aria-label="Blog categories">
+              <button class="tag active" data-filter="all">All</button>
+              <button class="tag" data-filter="updates">Updates</button>
+              <button class="tag" data-filter="privacy">Privacy</button>
+              <button class="tag" data-filter="tips">Tips</button>
+              <button class="tag" data-filter="features">Features</button>
+            </div>
+          </div>
+
+          <div class="featured-article">
+            <div class="featured-content">
+              <span class="eyebrow eyebrow-soft">Featured article</span>
+              <h2>Why better messaging tools improve trust and everyday communication.</h2>
+              <p>Modern communication platforms can help people feel more connected, organized, and informed.</p>
+              <a href="blog-post.html" class="button button-primary">Read article</a>
+            </div>
+            <div class="featured-image placeholder-panel">
+              <span>Featured Story</span>
+            </div>
+          </div>
+
+          <div class="blog-grid article-grid">
+            <article class="blog-card" data-category="updates">
+              <div class="thumb thumb-one"></div>
+              <div class="blog-copy">
+                <span class="post-tag">Updates</span>
+                <h3>What’s new in Heychat this quarter</h3>
+                <p>Explore new tools, faster onboarding, and growing community features for everyday communication.</p>
+                <a href="blog-post.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="privacy">
+              <div class="thumb thumb-two"></div>
+              <div class="blog-copy">
+                <span class="post-tag">Privacy</span>
+                <h3>Making digital communication safer by design</h3>
+                <p>Learn how thoughtful messaging tools can help users feel more protected online.</p>
+                <a href="blog-post.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="features">
+              <div class="thumb thumb-three"></div>
+              <div class="blog-copy">
+                <span class="post-tag">Features</span>
+                <h3>Five features that improve community engagement</h3>
+                <p>From structured channels to better visibility, the right tools make communication easier.</p>
+                <a href="blog-post.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="tips">
+              <div class="thumb thumb-four"></div>
+              <div class="blog-copy">
+                <span class="post-tag">Tips</span>
+                <h3>How to keep digital conversations healthy and focused</h3>
+                <p>Small habits can make communication clearer, calmer, and more productive for everyone.</p>
+                <a href="blog-post.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="updates">
+              <div class="thumb thumb-five"></div>
+              <div class="blog-copy">
+                <span class="post-tag">Updates</span>
+                <h3>Building a messaging app around user trust</h3>
+                <p>Trust grows when a product is designed around clarity, safety, and user confidence.</p>
+                <a href="blog-post.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="blog-card" data-category="features">
+              <div class="thumb thumb-six"></div>
+              <div class="blog-copy">
+                <span class="post-tag">Features</span>
+                <h3>Why status updates matter in digital communication</h3>
+                <p>Short updates reduce confusion and help people stay informed without constant checking.</p>
+                <a href="blog-post.html">Read more</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="ad-placeholder" aria-label="Ad placement area">
+            <span>Advertisement space (reserved for future AdSense placement)</span>
+          </div>
+
+          <div class="load-more-wrap">
+            <button class="button button-secondary" id="load-more">Load more articles</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html">
+            <img src="assets/heychat-logo.svg" alt="Heychat logo" class="brand-logo" />
+            <span>Heychat</span>
+          </a>
+          <p>Connecting people through clearer, safer, more meaningful communication.</p>
+        </div>
+
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Support</h3>
+          <ul>
+            <li><a href="help.html">Help Center</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Follow</h3>
+          <ul>
+            <li><a href="#">X / Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© 2026 Heychat. All rights reserved.</p>
+        <div>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
