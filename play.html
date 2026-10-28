@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Explore the Heychat Play lounge — a future game destination with challenges, rewards, and community competitions." />
-    <title>Play | Heychat</title>
+    <meta name="description" content="Naija Run: No gree for them — a bold Lagos street runner challenge on the Heychat Play page." />
+    <title>Naija Run | Heychat</title>
     <link rel="icon" type="image/svg+xml" href="assets/heychat-logo.svg" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -53,193 +53,109 @@
       <section class="page-header">
         <div class="container narrow">
           <span class="eyebrow">Play</span>
-          <h1>Games, challenges, and rewards built for the next era of Heychat.</h1>
+          <h1>Naija Run: No gree for dem!</h1>
           <p>
-            A future-ready game lounge where users can jump into quick challenges,
-            unlock rewards, and join friendly competition with a playful twist.
+            Run through the streets of Lagos, dodge EFCC, police, and LASTMA, chop Naija snack points,
+            and keep your hustle alive as the whole road chases you.
           </p>
         </div>
       </section>
 
       <section class="section">
-        <div class="container play-hero">
-          <div class="play-intro">
-            <span class="eyebrow eyebrow-soft">Coming soon</span>
-            <h2>Turn everyday engagement into a rewarding game experience.</h2>
-            <p>
-              This Play page is designed to welcome future game modes, challenge pools,
-              and reward systems while keeping the layout polished, modern, and ready for launch.
-            </p>
-
-            <div class="hero-actions">
-              <a href="#game-zones" class="button button-primary">Browse game zones</a>
-              <a href="features.html" class="button button-secondary">Explore features</a>
-            </div>
-
-            <div class="play-stats">
-              <div>
-                <strong>12k+</strong>
-                <span>Players queued</span>
-              </div>
-              <div>
-                <strong>4.9/5</strong>
-                <span>User love</span>
-              </div>
-              <div>
-                <strong>Daily</strong>
-                <span>Reward drops</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="play-promo" aria-label="Game rewards preview">
-            <div class="promo-badge">LIVE</div>
-            <div class="promo-card promo-card-main">
-              <div class="promo-topline">
-                <span class="mini-pill">Season 05</span>
-                <span class="small-text">+240 XP</span>
-              </div>
-              <h3>Weekly challenge vault</h3>
-              <div class="reward-meter">
-                <span style="width: 68%"></span>
-              </div>
-              <div class="promo-meta">
-                <span>68% unlocked</span>
-                <strong>4,800 coins</strong>
-              </div>
-            </div>
-
-            <div class="promo-stack">
-              <div class="mini-panel">
-                <span>🎯</span>
-                <div>
-                  <strong>Daily missions</strong>
-                  <small>3 reward tracks</small>
+        <div class="container">
+          <div class="naija-game-panel">
+            <div class="game-shell">
+              <div class="game-hud">
+                <div class="hud-box">
+                  <span>Score</span>
+                  <strong id="score">0</strong>
+                </div>
+                <div class="hud-box">
+                  <span>Best</span>
+                  <strong id="best">0</strong>
+                </div>
+                <div class="hud-box">
+                  <span>Level</span>
+                  <strong id="level">1</strong>
                 </div>
               </div>
-              <div class="mini-panel">
-                <span>🏆</span>
-                <div>
-                  <strong>Leaderboards</strong>
-                  <small>Live ranking</small>
+
+              <div class="game-stage" id="gameStage" aria-label="Naija Run endless runner game">
+                <div class="skyline"></div>
+                <div class="road-glow"></div>
+                <div class="player" id="player" aria-label="Player character">
+                  <span class="player-body">🧍</span>
+                </div>
+
+                <div class="run-message" id="runMessage">No gree dem!</div>
+
+                <div class="game-overlay" id="gameOverlay">
+                  <div class="overlay-card">
+                    <span class="eyebrow eyebrow-soft">Lagos chase</span>
+                    <h3>No gree for dem!</h3>
+                    <p>
+                      Dodge police sirens, EFCC pressure, and LASTMA wahala. Collect Gala, suya,
+                      pure water, and zobo to keep your score rising.
+                    </p>
+                    <button id="startGameBtn" class="button button-primary">Start race</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="section section-alt" id="game-zones">
-        <div class="container">
-          <div class="section-heading centered">
-            <span class="eyebrow eyebrow-soft">Game zones</span>
-            <h2>Choose your playful lane.</h2>
-          </div>
-
-          <div class="feature-grid feature-grid-large">
-            <article class="game-card">
-              <div class="game-thumb thumb-arcade"><span>🎮</span></div>
-              <div class="game-copy">
-                <span class="mini-pill">Arcade</span>
-                <h3>Quick-play arcade</h3>
-                <p>Fast rounds, instant wins, and a smooth drop-in experience for casual players.</p>
+              <div class="controls-row" aria-label="Game controls">
+                <button class="game-button" data-action="left">← Left</button>
+                <button class="game-button primary" data-action="jump">Jump</button>
+                <button class="game-button" data-action="right">Right →</button>
+                <button class="game-button alt" data-action="slide">Slide</button>
               </div>
-            </article>
-
-            <article class="game-card">
-              <div class="game-thumb thumb-skill"><span>🧠</span></div>
-              <div class="game-copy">
-                <span class="mini-pill">Skill</span>
-                <h3>Brain challenge</h3>
-                <p>Designed for logic, speed, and precision-based play with competitive score tracking.</p>
-              </div>
-            </article>
-
-            <article class="game-card">
-              <div class="game-thumb thumb-trivia"><span>❓</span></div>
-              <div class="game-copy">
-                <span class="mini-pill">Trivia</span>
-                <h3>Daily knowledge</h3>
-                <p>Short question rounds, streak bonuses, and themed quizzes for regular users.</p>
-              </div>
-            </article>
-
-            <article class="game-card">
-              <div class="game-thumb thumb-casual"><span>✨</span></div>
-              <div class="game-copy">
-                <span class="mini-pill">Casual</span>
-                <h3>Relaxed sessions</h3>
-                <p>Low-pressure game rooms where players can unwind while still earning progress.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Rewards</span>
-            <h2>Simple progression, meaningful payouts.</h2>
-          </div>
-
-          <div class="reward-grid">
-            <div class="reward-step">
-              <span class="step-number">01</span>
-              <h3>Play and complete missions</h3>
-              <p>Users earn points on quick session completions, streaks, and challenge milestones.</p>
-            </div>
-            <div class="reward-step">
-              <span class="step-number">02</span>
-              <h3>Level up their profile</h3>
-              <p>Progression unlocks badges, boosts, and seasonal access to new challenge rooms.</p>
-            </div>
-            <div class="reward-step">
-              <span class="step-number">03</span>
-              <h3>Cash out or redeem rewards</h3>
-              <p>Built for future monetization, loyalty perks, and payout flows after launch.</p>
             </div>
           </div>
         </div>
       </section>
 
       <section class="section section-alt">
-        <div class="container split-layout">
-          <div>
-            <span class="eyebrow">Leaderboard</span>
-            <h2>Friendly competition keeps momentum high.</h2>
-            <p>
-              The layout is ready for live rankings, seasonal contests, and community bragging rights.
-              It keeps the experience competitive without sacrificing a clean, premium feel.
-            </p>
+        <div class="container">
+          <div class="section-heading centered">
+            <span class="eyebrow eyebrow-soft">Naija vibe</span>
+            <h2>Street energy with plenty of pepper.</h2>
           </div>
 
-          <div class="leaderboard" aria-label="Top players leaderboard">
-            <div class="leaderboard-row leaderboard-head">
-              <span>Rank</span>
-              <span>Player</span>
-              <span>Coins</span>
-            </div>
-            <div class="leaderboard-row">
-              <span>#01</span>
-              <span>Nova</span>
-              <span>24,800</span>
-            </div>
-            <div class="leaderboard-row">
-              <span>#02</span>
-              <span>Fenix</span>
-              <span>22,650</span>
-            </div>
-            <div class="leaderboard-row">
-              <span>#03</span>
-              <span>Zee</span>
-              <span>19,430</span>
-            </div>
-            <div class="leaderboard-row">
-              <span>#04</span>
-              <span>Kai</span>
-              <span>17,260</span>
-            </div>
+          <div class="feature-grid feature-grid-large">
+            <article class="game-card">
+              <div class="game-thumb thumb-lagos"><span>🏙️</span></div>
+              <div class="game-copy">
+                <span class="mini-pill">Lagos</span>
+                <h3>Roadside chaos</h3>
+                <p>Busy streets, traffic pressure, sharp turns, and full Naija hustle energy on every run.</p>
+              </div>
+            </article>
+
+            <article class="game-card">
+              <div class="game-thumb thumb-chasers"><span>🚔</span></div>
+              <div class="game-copy">
+                <span class="mini-pill">Chasers</span>
+                <h3>Police + EFCC + LASTMA</h3>
+                <p>The road gets hotter as the chase gets louder and the pressure comes closer.</p>
+              </div>
+            </article>
+
+            <article class="game-card">
+              <div class="game-thumb thumb-collect"><span>🥯</span></div>
+              <div class="game-copy">
+                <span class="mini-pill">Loot</span>
+                <h3>Naija collectables</h3>
+                <p>Pick up Gala, suya, pure water, zobo, and other street-life points to boost your score.</p>
+              </div>
+            </article>
+
+            <article class="game-card">
+              <div class="game-thumb thumb-style"><span>🔥</span></div>
+              <div class="game-copy">
+                <span class="mini-pill">Style</span>
+                <h3>Bold animation</h3>
+                <p>Fast lane switching, dramatic jumps, and loud visual energy made for a sharp mobile-style run.</p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -247,15 +163,15 @@
       <section class="section">
         <div class="container">
           <div class="play-cta">
-            <span class="eyebrow">Launch-ready design</span>
-            <h2>Built for future games, rewards, and community growth.</h2>
+            <span class="eyebrow">How to play</span>
+            <h2>Run fast, stay sharp, and no fall hand.</h2>
             <p>
-              This page is intentionally designed as a premium placeholder so the team can plug in
-              whichever game types they want later without reworking the core layout.
+              Use left/right to switch lane, jump to clear barriers, and slide to stay slippery under pressure.
+              Keep your eyes open for Naija rewards and avoid getting caught by the boys with uniforms.
             </p>
             <div class="hero-actions">
-              <a href="contact.html" class="button button-primary">Talk to us</a>
-              <a href="features.html" class="button button-secondary">Review product features</a>
+              <button class="button button-primary" id="playNowBtn">Play now</button>
+              <a href="features.html" class="button button-secondary">See features</a>
             </div>
           </div>
         </div>
@@ -312,4 +228,3 @@
     <script src="js/main.js"></script>
   </body>
 </html>
-
